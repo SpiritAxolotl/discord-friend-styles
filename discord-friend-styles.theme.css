@@ -1,0 +1,81 @@
+/**
+ * @name discord-friend-styles
+ * @description yayyy
+ * @author multiple
+ * @version 1.0
+*/
+
+* {
+    text-rendering: optimizeSpeed !important;
+}
+
+/* NOVA_AURASTY */
+li[data-author-id="1009962575225696286"] {
+    ::selection {
+        background-color: #FF0000;
+        color: #000000;
+    }
+
+    .messageContent_c19a55 {
+        &:has(code.inline)::before {
+            display: inline-block;
+            font-size: 0.80em;
+            content: "=//: ";
+            color: #FF0000;
+        }
+
+        &:has(code.inline)::after {
+            display: inline-block;
+            font-size: 0.80em;
+            content: "  /.";
+            color: #FF0000;
+        }
+
+        &::before {
+            display: inline-block;
+            font-size: 0.80em;
+            content: "✂ ";
+            color: #FF0000;
+        }
+    }
+}
+
+/* V-23 */
+li[data-author-id="1301447356092252190"], li[data-author-id="98613009261297664"] {
+    font-family: "Facade Ouest";
+    letter-spacing: 0.15ch;
+
+    code {
+        color: oklch(70% 0.12 170);
+        letter-spacing: initial;
+        background-color: oklch(25% 0.03 310);
+        border: 0;
+    }
+    code.inline {
+        font-family: "Facade Ouest";
+        letter-spacing: 0.15ch;
+        font-size: 1em;
+    }
+    code.strong {
+        color: black;
+        background-color: white;
+    }
+}
+
+/* CYNTHIA */
+li[data-author-id="97437477723193344"] {
+    font-family: "Iosevka Cyclar-Q";
+
+    code {
+        font-family: "Iosevka Cyclar-C";
+    }
+
+    .messageContent_c19a55::before {
+        font-family: "Iosevka Cyclar-C";
+        font-feature-settings: "calt" on;
+        display: inline-block;
+        font-size: 0.75em;
+        content: ":~: ";
+        color: #FF47A6;
+    }
+}
