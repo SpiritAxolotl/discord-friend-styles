@@ -11,6 +11,16 @@
 
 /* NOVA_AURASTY */
 li[data-author-id="1009962575225696286"] {
+    font-family: "MS Gothic";
+    background: black;
+    border-left: 4px solid #00FFFF;
+    --text-link: cyan;
+    --accent-2: red;
+    --background-mentioned: #200;
+    --background-mentioned-hover: #200;
+    --header-primary: white;
+    --header-secondary: white;
+
     ::selection {
         background-color: #FF0000;
         color: #000000;
@@ -37,6 +47,57 @@ li[data-author-id="1009962575225696286"] {
             content: "✂ ";
             color: #FF0000;
         }
+    }
+
+    .interactive:hover {
+        background-color: black;
+        color: cyan;
+    }
+
+    & h1, h2 {
+        font-family: "MS Gothic";
+        font-weight: bold;
+    }
+
+    h3 [class*="username_"] {
+        font-weight: bold;
+        color: red;
+    }
+
+    div[class*="messageContent"] {
+        font-weight: bold;
+        color: white;
+    }
+
+    /* HI I CAN'T FIGURE OUT HOW TO FIX THE FUCKING CODE BLOCK IT JUST DOESN'T WANNA CHANGE COLOUR RAGYBHRSBHJSR I DON'T CARE IT'S FINE IT'S F */
+    
+    code {
+        font-family: "MS Gothic";
+        color: #FFFFFF;
+        background-color: #000000;
+    }
+
+    code.inline {
+        font-size: 1em;
+        font-family: "MS Gothic";
+        padding:3px;
+        letter-spacing: 0.5px;
+        color: #000000;
+        background-color: #FFFFFF;
+    }
+
+    code.strong {
+        color: #FF0000;
+        background-color: #FFFFFF;
+    }
+
+    div[class*="messageContent"] a {
+        text-decoration: underline;
+        font-family: "MS PGothic";
+    }
+
+    strong {
+        color: red;
     }
 }
 
