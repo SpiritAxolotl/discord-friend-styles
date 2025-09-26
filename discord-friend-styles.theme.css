@@ -26,7 +26,7 @@ li[data-author-id="1009962575225696286"] {
         color: #000000;
     }
 
-    .messageContent_c19a55 {
+    .message__5126c:not(.isSystemMessage_c19a55) .messageContent_c19a55:not(.repliedTextContent_c19a55) {
         &:has(code.inline)::before {
             display: inline-block;
             font-size: 0.80em;
@@ -59,14 +59,19 @@ li[data-author-id="1009962575225696286"] {
         font-weight: bold;
     }
 
-    h3 [class*="username_"] {
+    h3 .username_c19a55 {
         font-weight: bold;
         color: red;
     }
 
-    div[class*="messageContent"] {
+    .messageContent_c19a55 {
         font-weight: bold;
         color: white;
+
+        a {
+            text-decoration: underline;
+            font-family: "MS PGothic";
+        }
     }
 
     /* HI I CAN'T FIGURE OUT HOW TO FIX THE FUCKING CODE BLOCK IT JUST DOESN'T WANNA CHANGE COLOUR RAGYBHRSBHJSR I DON'T CARE IT'S FINE IT'S F */
@@ -89,11 +94,6 @@ li[data-author-id="1009962575225696286"] {
     code.strong {
         color: #FF0000;
         background-color: #FFFFFF;
-    }
-
-    div[class*="messageContent"] a {
-        text-decoration: underline;
-        font-family: "MS PGothic";
     }
 
     strong {
@@ -131,7 +131,7 @@ li[data-author-id="97437477723193344"] {
         font-family: "Iosevka Cyclar-C";
     }
 
-    .messageContent_c19a55::before {
+    .message__5126c:not(.isSystemMessage_c19a55) .messageContent_c19a55:not(.repliedTextContent_c19a55)::before {
         font-family: "Iosevka Cyclar-C";
         font-feature-settings: "calt" on;
         display: inline-block;
