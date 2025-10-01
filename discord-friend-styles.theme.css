@@ -110,16 +110,19 @@ li[data-author-id="1301447356092252190"], li[data-author-id="98613009261297664"]
         color: oklch(70% 0.12 170);
         letter-spacing: initial;
         background-color: oklch(25% 0.03 310);
-        border: 0;
+        border: 2;
+        border-color: oklch(30% 0.04 310);
     }
     code.inline {
         font-family: "Facade Ouest";
         letter-spacing: 0.15ch;
         font-size: 1em;
     }
-    code.strong {
-        color: black;
-        background-color: white;
+    strong {
+        font-family: "Stereo Sans";
+    }
+    strong code.inline {
+        font-family: "Stereo Sans";
     }
 }
 
