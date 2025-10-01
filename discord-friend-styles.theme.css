@@ -4,9 +4,17 @@
  * @author multiple
  * @version 1.0
 */
-
 * {
     text-rendering: optimizeSpeed !important;
+}
+
+@font-face {
+    font-family: "Facade Ouest";
+    src: url(https://github.com/eleonorefines/Facade-font/raw/refs/heads/master/fonts/Facade-Ouest.woff) format('woff');
+}
+@font-face {
+    font-family: "Stereo Sans";
+    src: url(https://github.com/cyclar2/discord-friend-styles/raw/refs/heads/trunk/StereoSans.woff) format('woff');
 }
 
 /* NOVA_AURASTY */
