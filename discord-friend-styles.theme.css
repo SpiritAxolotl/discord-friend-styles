@@ -16,6 +16,16 @@
     font-family: "Stereo Sans";
     src: url(https://github.com/cyclar2/discord-friend-styles/raw/refs/heads/trunk/StereoSans.woff) format('woff');
 }
+/* Also commented out until I can fix the prefix bug for Vessel. 
+@font-face {
+    font-family: "Cartesian";
+    src: url(https://github.com/cyclar2/discord-friend-styles/raw/refs/heads/trunk/Cartesian.woff) format('woff');
+}
+    */
+@font-face {
+    font-family: "Megrim";
+    src: url(https://github.com/cyclar2/discord-friend-styles/raw/refs/heads/trunk/Megrim.woff) format('woff');
+}
 
 /* NOVA_AURASTY */
 li[data-author-id="1009962575225696286"] {
@@ -149,5 +159,61 @@ li[data-author-id="97437477723193344"] {
         font-size: 0.75em;
         content: ":~: ";
         color: #FF47A6;
+    }
+}
+
+/* DISTANT STAR */
+li[data-author-id="111743808701472768"] {
+    /* Commenting this out until I can find a fix that lets Vessel keep the prefix
+    in Facade 
+    font-family: "Cartesian";*/
+    font-family: "Facade Ouest";
+    letter-spacing: 0.15ch;
+
+    & h3 [class*="username_"] {
+	    font-family: "Megrim";
+		--font-code: "Megrim";
+		letter-spacing: 0.15ch;
+        font-weight: bold;
+		font-size: large;
+        background-image: linear-gradient(oklch(0.4727 0.1439 252.67), oklch(0.5313 0.268 289.73));
+        color: transparent;
+        background-clip: text;
+	filter: 
+	drop-shadow(-4px -4px rgb(255 255 255 / 0.04)) 
+	drop-shadow(4px -4px rgb(255 255 255 / 0.04)) 
+	drop-shadow(-4px 4px rgb(255 255 255 / 0.04)) 
+	drop-shadow(4px 4px rgb(255 255 255 / 0.04));
+    }
+    & code {
+		font-family: "Facade Ouest";
+		--font-code: "Facade Ouest";
+        color: oklch(69.459% 0.1795 301.812);
+        background-color: oklch(18.743% 0.0343 293.631);
+    }
+    & code.inline {
+        font-family: "Facade Ouest";
+		--font-code: "Facade Ouest";
+		font-size: 1em;
+    }
+	& h1, h2 {
+        font-family: "Facade Ouest";
+        font-weight: bold;
+    }
+}
+li[data-author-id="1298439483326333025"] {
+    font-family: "Facade Ouest";
+	--font-code: "Facade Ouest";
+    letter-spacing: 0.15ch;
+    & code {    
+        color: oklch(69.459% 0.1795 301.812);
+        background-color: oklch(18.743% 0.0343 293.631);
+    }
+    & code.inline {
+        font-size: 1em;
+    }
+    & h1, h2 {
+        font-family: "Facade Ouest";
+        font-weight: bold;
     }
 }
