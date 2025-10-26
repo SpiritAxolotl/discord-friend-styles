@@ -17,8 +17,8 @@
     src: url(https://github.com/cyclar2/discord-friend-styles/raw/refs/heads/trunk/StereoSans.woff) format('woff');
 }
 @font-face {
-    font-family: "Bukan Binary Too";
-    src: url(https://github.com/cyclar2/discord-friend-styles/raw/refs/heads/trunk/bukanbinary.too.ttf);
+    font-family: "4-Sided";
+    src: url(https://github.com/cyclar2/discord-friend-styles/raw/refs/heads/trunk/4-Sided.ttf) format('ttf');
 }
 /* Also commented out until I can fix the prefix bug for Vessel. 
 @font-face {
@@ -144,7 +144,8 @@ li[data-author-id="1301447356092252190"], li[data-author-id="98613009261297664"]
         font-family: "Stereo Sans";
     }
     em code.inline {
-        font-family: "Bukan Binary Too";
+        font-family: "4-Sided";
+        font-style: normal;
     }
 }
 
