@@ -16,6 +16,10 @@
     font-family: "Stereo Sans";
     src: url(https://github.com/cyclar2/discord-friend-styles/raw/refs/heads/trunk/StereoSans.woff) format('woff');
 }
+@font-face {
+    font-family: "Bukan Binary Too";
+    src: url(https://github.com/cyclar2/discord-friend-styles/raw/refs/heads/trunk/bukanbinary.too.ttf);
+}
 /* Also commented out until I can fix the prefix bug for Vessel. 
 @font-face {
     font-family: "Cartesian";
@@ -136,11 +140,11 @@ li[data-author-id="1301447356092252190"], li[data-author-id="98613009261297664"]
         letter-spacing: 0.15ch;
         font-size: 1em;
     }
-    strong {
-        font-family: "Stereo Sans";
-    }
     strong code.inline {
         font-family: "Stereo Sans";
+    }
+    em code.inline {
+        font-family: "Bukan Binary Too";
     }
 }
 
