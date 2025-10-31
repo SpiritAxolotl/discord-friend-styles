@@ -167,6 +167,7 @@ li[data-author-id="111743808701472768"] {
     font-family: "Facade Ouest";
     letter-spacing: 0.15ch;
 
+    /* Discord's new Nitro usename styling shatters this pretty badly.
     & h3 [class*="username_"] {
 	    font-family: "Megrim";
 		--font-code: "Megrim";
@@ -176,12 +177,12 @@ li[data-author-id="111743808701472768"] {
         background-image: linear-gradient(oklch(0.4727 0.1439 252.67), oklch(0.5313 0.268 289.73));
         color: transparent;
         background-clip: text;
-	filter: 
-	drop-shadow(-4px -4px rgb(255 255 255 / 0.04)) 
-	drop-shadow(4px -4px rgb(255 255 255 / 0.04)) 
-	drop-shadow(-4px 4px rgb(255 255 255 / 0.04)) 
-	drop-shadow(4px 4px rgb(255 255 255 / 0.04));
-    }
+	    filter: 
+	    drop-shadow(-4px -4px rgb(255 255 255 / 0.04)) 
+	    drop-shadow(4px -4px rgb(255 255 255 / 0.04)) 
+	    drop-shadow(-4px 4px rgb(255 255 255 / 0.04)) 
+	    drop-shadow(4px 4px rgb(255 255 255 / 0.04));
+    } */
     & code {
 		font-family: "Facade Ouest";
 		--font-code: "Facade Ouest";
