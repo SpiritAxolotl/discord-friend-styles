@@ -5,213 +5,213 @@
  * @version 1.0
 */
 * {
-    text-rendering: optimizeSpeed !important;
+  text-rendering: optimizeSpeed !important;
 }
 
 @font-face {
-    font-family: "Facade Ouest";
-    src: url(https://github.com/eleonorefines/Facade-font/raw/refs/heads/master/fonts/Facade-Ouest.woff) format('woff');
+  font-family: "Facade Ouest";
+  src: url(https://github.com/eleonorefines/Facade-font/raw/refs/heads/master/fonts/Facade-Ouest.woff) format("woff");
 }
 @font-face {
-    font-family: "Stereo Sans";
-    src: url(https://github.com/cyclar2/discord-friend-styles/raw/refs/heads/trunk/StereoSans.woff) format('woff');
+  font-family: "Stereo Sans";
+  src: url(https://github.com/cyclar2/discord-friend-styles/raw/refs/heads/trunk/StereoSans.woff) format("woff");
 }
-/* Also commented out until I can fix the prefix bug for Vessel. 
+/* Also commented out until I can fix the prefix bug for Vessel.
 @font-face {
-    font-family: "Cartesian";
-    src: url(https://github.com/cyclar2/discord-friend-styles/raw/refs/heads/trunk/Cartesian.woff) format('woff');
+  font-family: "Cartesian";
+  src: url(https://github.com/cyclar2/discord-friend-styles/raw/refs/heads/trunk/Cartesian.woff) format("woff");
 }
-    */
+*/
 @font-face {
-    font-family: "Megrim";
-    src: url(https://github.com/cyclar2/discord-friend-styles/raw/refs/heads/trunk/Megrim.woff) format('woff');
+  font-family: "Megrim";
+  src: url(https://github.com/cyclar2/discord-friend-styles/raw/refs/heads/trunk/Megrim.woff) format("woff");
 }
 
 /* NOVA_AURASTY */
 li[data-author-id="1009962575225696286"] {
+  font-family: "MS Gothic";
+  background: black;
+  border-left: 4px solid #00FFFF;
+  --text-link: cyan;
+  --accent-2: red;
+  --background-mentioned: #200;
+  --background-mentioned-hover: #200;
+  --header-primary: white;
+  --header-secondary: white;
+
+  ::selection {
+    background-color: #FF0000;
+    color: #000000;
+  }
+
+  .message__5126c:not(.isSystemMessage_c19a55) .messageContent_c19a55:not(.repliedTextContent_c19a55) {
+    &:has(code.inline)::before {
+      display: inline-block;
+      font-size: 0.80em;
+      content: "=//: ";
+      color: #FF0000;
+    }
+
+    &:has(code.inline)::after {
+      display: inline-block;
+      font-size: 0.80em;
+      content: "  /.";
+      color: #FF0000;
+    }
+
+    &::before {
+      display: inline-block;
+      font-size: 0.80em;
+      content: "✂ ";
+      color: #FF0000;
+    }
+  }
+
+  .interactive:hover {
+    background-color: black;
+    color: cyan;
+  }
+
+  & h1, h2 {
     font-family: "MS Gothic";
-    background: black;
-    border-left: 4px solid #00FFFF;
-    --text-link: cyan;
-    --accent-2: red;
-    --background-mentioned: #200;
-    --background-mentioned-hover: #200;
-    --header-primary: white;
-    --header-secondary: white;
+    font-weight: bold;
+  }
 
-    ::selection {
-        background-color: #FF0000;
-        color: #000000;
+  h3 .username_c19a55 {
+    font-weight: bold;
+    color: red;
+  }
+
+  .messageContent_c19a55 {
+    font-weight: bold;
+    color: white;
+
+    a {
+      text-decoration: underline;
+      font-family: "MS PGothic";
     }
+  }
 
-    .message__5126c:not(.isSystemMessage_c19a55) .messageContent_c19a55:not(.repliedTextContent_c19a55) {
-        &:has(code.inline)::before {
-            display: inline-block;
-            font-size: 0.80em;
-            content: "=//: ";
-            color: #FF0000;
-        }
+  /* HI I CAN'T FIGURE OUT HOW TO FIX THE FUCKING CODE BLOCK IT JUST DOESN'T WANNA CHANGE COLOUR RAGYBHRSBHJSR I DON'T CARE IT'S FINE IT'S F */
 
-        &:has(code.inline)::after {
-            display: inline-block;
-            font-size: 0.80em;
-            content: "  /.";
-            color: #FF0000;
-        }
+  code {
+    font-family: "MS Gothic";
+    color: #FFFFFF;
+    background-color: #000000;
+  }
 
-        &::before {
-            display: inline-block;
-            font-size: 0.80em;
-            content: "✂ ";
-            color: #FF0000;
-        }
-    }
+  code.inline {
+    font-size: 1em;
+    font-family: "MS Gothic";
+    padding:3px;
+    letter-spacing: 0.5px;
+    color: #000000;
+    background-color: #FFFFFF;
+  }
 
-    .interactive:hover {
-        background-color: black;
-        color: cyan;
-    }
+  strong code.inline {
+    color: #FF0000;
+    background-color: #FFFFFF;
+  }
 
-    & h1, h2 {
-        font-family: "MS Gothic";
-        font-weight: bold;
-    }
-
-    h3 .username_c19a55 {
-        font-weight: bold;
-        color: red;
-    }
-
-    .messageContent_c19a55 {
-        font-weight: bold;
-        color: white;
-
-        a {
-            text-decoration: underline;
-            font-family: "MS PGothic";
-        }
-    }
-
-    /* HI I CAN'T FIGURE OUT HOW TO FIX THE FUCKING CODE BLOCK IT JUST DOESN'T WANNA CHANGE COLOUR RAGYBHRSBHJSR I DON'T CARE IT'S FINE IT'S F */
-    
-    code {
-        font-family: "MS Gothic";
-        color: #FFFFFF;
-        background-color: #000000;
-    }
-
-    code.inline {
-        font-size: 1em;
-        font-family: "MS Gothic";
-        padding:3px;
-        letter-spacing: 0.5px;
-        color: #000000;
-        background-color: #FFFFFF;
-    }
-
-    strong code.inline {
-        color: #FF0000;
-        background-color: #FFFFFF;
-    }
-
-    strong {
-        color: red;
-    }
+  strong {
+    color: red;
+  }
 }
 
 /* V-23 */
 li[data-author-id="1301447356092252190"], li[data-author-id="98613009261297664"] {
+  font-family: "Facade Ouest";
+  letter-spacing: 0.15ch;
+
+  code {
+    color: oklch(70% 0.12 170);
+    letter-spacing: initial;
+    background-color: oklch(25% 0.03 310);
+    border: 2;
+    border-color: oklch(30% 0.04 310);
+  }
+  code.inline {
     font-family: "Facade Ouest";
     letter-spacing: 0.15ch;
-
-    code {
-        color: oklch(70% 0.12 170);
-        letter-spacing: initial;
-        background-color: oklch(25% 0.03 310);
-        border: 2;
-        border-color: oklch(30% 0.04 310);
-    }
-    code.inline {
-        font-family: "Facade Ouest";
-        letter-spacing: 0.15ch;
-        font-size: 1em;
-    }
-    strong code.inline {
-        font-family: "Stereo Sans";
-    }
+    font-size: 1em;
+  }
+  strong code.inline {
+    font-family: "Stereo Sans";
+  }
 }
 
 /* CYNTHIA */
 li[data-author-id="97437477723193344"] {
-    font-family: "Iosevka Cyclar-Q";
+  font-family: "Iosevka Cyclar-Q";
 
-    code {
-        font-family: "Iosevka Cyclar-C";
-    }
+  code {
+    font-family: "Iosevka Cyclar-C";
+  }
 
-    .message__5126c:not(.isSystemMessage_c19a55) .messageContent_c19a55:not(.repliedTextContent_c19a55)::before {
-        font-family: "Iosevka Cyclar-C";
-        font-feature-settings: "calt" on;
-        display: inline-block;
-        font-size: 0.75em;
-        content: ":~: ";
-        color: #FF47A6;
-    }
+  .message__5126c:not(.isSystemMessage_c19a55) .messageContent_c19a55:not(.repliedTextContent_c19a55)::before {
+    font-family: "Iosevka Cyclar-C";
+    font-feature-settings: "calt" on;
+    display: inline-block;
+    font-size: 0.75em;
+    content: ":~: ";
+    color: #FF47A6;
+  }
 }
 
 /* DISTANT STAR */
 li[data-author-id="111743808701472768"] {
-    /* Commenting this out until I can find a fix that lets Vessel keep the prefix
-    in Facade 
-    font-family: "Cartesian";*/
-    font-family: "Facade Ouest";
-    letter-spacing: 0.15ch;
+  /* Commenting this out until I can find a fix that lets Vessel keep the prefix
+  in Facade
+  font-family: "Cartesian";*/
+  font-family: "Facade Ouest";
+  letter-spacing: 0.15ch;
 
-    /* Discord's new Nitro usename styling shatters this pretty badly.
-    & h3 [class*="username_"] {
-	    font-family: "Megrim";
-		--font-code: "Megrim";
-		letter-spacing: 0.15ch;
-        font-weight: bold;
-		font-size: large;
-        background-image: linear-gradient(oklch(0.4727 0.1439 252.67), oklch(0.5313 0.268 289.73));
-        color: transparent;
-        background-clip: text;
-	    filter: 
-	    drop-shadow(-4px -4px rgb(255 255 255 / 0.04)) 
-	    drop-shadow(4px -4px rgb(255 255 255 / 0.04)) 
-	    drop-shadow(-4px 4px rgb(255 255 255 / 0.04)) 
-	    drop-shadow(4px 4px rgb(255 255 255 / 0.04));
-    } */
-    & code {
-		font-family: "Facade Ouest";
-		--font-code: "Facade Ouest";
-        color: oklch(69.459% 0.1795 301.812);
-        background-color: oklch(18.743% 0.0343 293.631);
-    }
-    & code.inline {
-        font-family: "Facade Ouest";
-		--font-code: "Facade Ouest";
-		font-size: 1em;
-    }
-	& h1, h2 {
-        font-family: "Facade Ouest";
-        font-weight: bold;
-    }
+  /* Discord's new Nitro usename styling shatters this pretty badly.
+  & h3 [class*="username_"] {
+    font-family: "Megrim";
+    --font-code: "Megrim";
+    letter-spacing: 0.15ch;
+    font-weight: bold;
+    font-size: large;
+    background-image: linear-gradient(oklch(0.4727 0.1439 252.67), oklch(0.5313 0.268 289.73));
+    color: transparent;
+    background-clip: text;
+    filter:
+      drop-shadow(-4px -4px rgb(255 255 255 / 0.04))
+      drop-shadow(4px -4px rgb(255 255 255 / 0.04))
+      drop-shadow(-4px 4px rgb(255 255 255 / 0.04))
+      drop-shadow(4px 4px rgb(255 255 255 / 0.04));
+  } */
+  & code {
+    font-family: "Facade Ouest";
+    --font-code: "Facade Ouest";
+    color: oklch(69.459% 0.1795 301.812);
+    background-color: oklch(18.743% 0.0343 293.631);
+  }
+  & code.inline {
+    font-family: "Facade Ouest";
+    --font-code: "Facade Ouest";
+    font-size: 1em;
+  }
+  & h1, h2 {
+    font-family: "Facade Ouest";
+    font-weight: bold;
+  }
 }
 li[data-author-id="1298439483326333025"] {
+  font-family: "Facade Ouest";
+  --font-code: "Facade Ouest";
+  letter-spacing: 0.15ch;
+  & code {
+    color: oklch(69.459% 0.1795 301.812);
+    background-color: oklch(18.743% 0.0343 293.631);
+  }
+  & code.inline {
+    font-size: 1em;
+  }
+  & h1, h2 {
     font-family: "Facade Ouest";
-	--font-code: "Facade Ouest";
-    letter-spacing: 0.15ch;
-    & code {    
-        color: oklch(69.459% 0.1795 301.812);
-        background-color: oklch(18.743% 0.0343 293.631);
-    }
-    & code.inline {
-        font-size: 1em;
-    }
-    & h1, h2 {
-        font-family: "Facade Ouest";
-        font-weight: bold;
-    }
+    font-weight: bold;
+  }
 }
